@@ -26,13 +26,8 @@ var gmh = {
                 d.style.height              = this.sltGridSize.value + 'px';
                 d.style.display             = 'inline-block';
                 d.style.float               = 'left';
-
-                //first value goes across and second down
-
                 d.style.backgroundPosition  = (this.inputImage.clientWidth-this.sltGridSize.value*i) + 'px ' + (this.inputImage.clientWidth-this.sltGridSize.value*j) + 'px';
                 d.style.backgroundImage     = 'url(\'' + imageSource + '\')';
-                //d.innerHTML                 = (this.inputImage.clientWidth-this.sltGridSize.value*i) + 'px ' + (this.inputImage.clientWidth-this.sltGridSize.value*j) + 'px';
-                //d.innerHTML = index;
                 arrTiles.push({index: index, item: d});
                 index++;
             }
