@@ -15,19 +15,19 @@
 </head>
 <body>
 <div class="basicBox header">
-	scramble the picture
+	<span class="galogo"></span> Front End Development Challenge
 </div>
 <div class="basicBox">
-	<select id="gridSize">
+	<select onchange="gmh.reset();" id="gridSize">
 		<option value="5">5 x 5</option>
 		<option value="10">10 x 10</option>
 		<option value="20">20 x 20</option>
-		<option value="40">40 x 40</option>
+		<option selected value="40">40 x 40</option>
 		<option value="50">50 x 50</option>
 		<option value="100">100 x 100</option>
 		<option value="200">200 x 200</option>
 	</select>
-	<div class="button" onclick="gmh.scramble();" id="scrambleImg">scramble!</div>
+	<div id="scrambleImg" class="button" onclick="gmh.scramble();">scramble!</div>
 	<div id="showLoading" class="loader"></div>
 </div>
 <div class="bigBox">
@@ -40,8 +40,17 @@
 	</div>
 </div>
 <div class="support">
-	this app has been tested on Windows for Firefox 13+ and IE 9+, on Mac for Safari 6+, Firefox 16+ and Chrome 22+
-	<br>and on iPad and iPhone (Chrome and Safari)
+	<div class="panel left shiftLeft">
+	This web site has been tested on Windows: IE9+,CH, FF13+, Mac: SF6+,FF16+,CH22+,iPhone IOS4+, iPad I0S6 &amp; produced by Robert D. Ellis
+	</div>
+	<div class="panel right">
+		<ul class="nav">
+			<li class="icon em"><a href="mailto:rellis@getmehere.com?subject=GA%20Front%20Development%20Challenge" target="_blank">&nbsp;</a></li>
+			<li class="icon li"><a href="http://www.linkedin.com/in/robertdellis" target="_blank">&nbsp;</a></li>
+			<li class="icon wb"><a href="http://getmehere.com" target="_blank">&nbsp;</a></li>
+			<li class="icon gt"><a href="https://github.com/robertgetmehere/GAFairFrontEndDevChallenge.git" target="blank">&nbsp;</a></li>
+		</ul>
+	</div>
 </div>
 <script type="text/javascript" src="js/scramble.js"></script>
 </body>

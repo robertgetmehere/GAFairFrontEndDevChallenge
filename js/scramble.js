@@ -7,6 +7,12 @@ var gmh = {
         this.loader = document.getElementById('showLoading');
         this.mode=0;
     },
+    reset:function() {
+        this.mode = 0;
+        this.toggle.innerHTML = 'scramble!';
+        this.loader.style.display = 'none';
+        this.outputImage.innerHTML='';
+    },
     scramble: function() {
         this.loader.style.display = 'block';
 
