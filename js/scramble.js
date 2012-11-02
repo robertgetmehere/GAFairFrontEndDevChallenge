@@ -1,3 +1,11 @@
+/*
+ * 	NOTE:
+ *
+ * 	this is my second submission for this challenge - It improves on my first submission
+ *  which I submitted as is before the hurricane in case of long term power outage
+ *
+ */
+
 var gmh = {
     initialize: function() {
         this.sltGridSize = document.getElementById('gridSize');
